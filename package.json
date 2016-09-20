@@ -10,7 +10,6 @@
   },
   "scripts": {
     "compile": "babel -d lib/ src/",
-    "preinstall": "npm run compile",
     "prepublish": "npm run test && npm run compile",
     "lint": "eslint src & eslint spec",
     "test": "npm run lint && ava",
@@ -22,9 +21,7 @@
     "debug": "^2.2.0",
     "fs-extra": "^0.26.7",
     "lodash.template": "^4.2.2",
-    "temp": "^0.8.3"
-  },
-  "devDependencies": {
+    "temp": "^0.8.3",
     "ava": "^0.13.0",
     "babel-cli": "^6.6.5",
     "babel-eslint": "^6.0.2",
@@ -34,6 +31,8 @@
     "babel-preset-stage-0": "^6.5.0",
     "babel-register": "^6.7.2",
     "eslint": "^2.4.0"
+  },
+  "devDependencies": {
   },
   "engines": {
     "node": ">=0.4.0"
