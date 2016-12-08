@@ -51,7 +51,6 @@ There are several configuration settings supported:
 | `description`         | No       | The description value for the nuget package metadata. Defaults to the `description` field from your app's package.json file when unspecified. |
 | `version`             | No       | The version value for the nuget package metadata. Defaults to the `version` field from your app's package.json file when unspecified. |
 | `title`               | No       | The title value for the nuget package metadata. Defaults to the `productName` field and then the `name` field from your app's package.json file when unspecified. |
-| `name`                | No      | Windows Application Model ID (appId). Defaults to the `name` field in your app's package.json file. |
 | `certificateFile`     | No       | The path to an Authenticode Code Signing Certificate |
 | `certificatePassword` | No       | The password to decrypt the certificate given in `certificateFile` |
 | `signWithParams`      | No       | Params to pass to signtool.  Overrides `certificateFile` and `certificatePassword`. |
@@ -163,8 +162,8 @@ Notice that the first time the installer launches your app, your app will see a 
 
 ## Debugging this package
 
-You can get debug messages from this package by running with the environment variable `DEBUG=electron-winstaller:main` e.g.
+You can get debug messages from this package by running with the environment variable `DEBUG=electron-windows-installer:main` e.g.
 
 ```
-DEBUG=electron-winstaller:main node tasks/electron-winstaller.js
+DEBUG=electron-windows-installer:main node tasks/electron-winstaller.js
 ```
