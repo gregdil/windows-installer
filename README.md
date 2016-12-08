@@ -10,7 +10,7 @@ NPM module that builds Windows installers for
 ## Installing
 
 ```sh
-npm install --save-dev muon-winstaller
+npm install --save-dev electron-winstaller
 ```
 
 ## Usage
@@ -18,7 +18,7 @@ npm install --save-dev muon-winstaller
 Require the package:
 
 ```js
-var electronInstaller = require('muon-winstaller');
+var electronInstaller = require('electron-winstaller');
 ```
 
 Then do a build like so..
@@ -163,8 +163,8 @@ Notice that the first time the installer launches your app, your app will see a 
 
 ## Debugging this package
 
-You can get debug messages from this package by running with the environment variable `DEBUG=muon-winstaller:main` e.g.
+You can get debug messages from this package by running with the environment variable `DEBUG=electron-winstaller:main` e.g.
 
 ```
-DEBUG=muon-winstaller:main node tasks/muon-winstaller.js
+DEBUG=electron-winstaller:main node tasks/electron-winstaller.js
 ```
